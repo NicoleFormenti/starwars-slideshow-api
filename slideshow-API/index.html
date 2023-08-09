@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SlideShow</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!--make a slide show with planets from the Star Wars API, using an array of images-->
+    <!--images from a website, caption from SWAPI-->
+    <div class="slideshow-container">
+        <div class="slideshow">
+            <div class="slide-number">1/4</div>
+            <img src="https://live-production.wcms.abc-cdn.net.au/d836d9cddfc48d2e90fb1aeaf9836b87?impolicy=wcms_crop_resize&cropH=567&cropW=1008&xPos=128&yPos=0&width=862&height=485" alt="tatooine" width="100%" height="400px">
+            <div id="image_one"></div>
+            <div class="slide-text">Name:</div>
+            <div class="planet-name"></div>
+        </div>
+        <div class="slideshow">
+            <div class="slide-number">2/4</div>
+           <img src="https://media.cntraveler.com/photos/5727696bb161ad8b31235293/16:9/w_2560%2Cc_limit/GettyImages-143687829-tunisia.jpg" alt="tatooine" width="100%" height="400px">
+            <div class="slide-text">Climate:</div>
+            <div class="planet-climate"></div>
+        </div>
+        <div class="slideshow">
+            <div class="slide-number">3/4</div>
+            <img src="https://mickeyblog.com/wp-content/uploads/2021/04/starwars-tatooine-city.jpg" alt="tatooine" width="100%" height="400px">
+            <div class="slide-text">Population:</div>
+            <div class="planet-population"></div>
+        </div>
+        <div class="slideshow">
+            <div class="slide-number">4/4</div>
+           <img src="https://lumiere-a.akamaihd.net/v1/images/tatooine-main_1633e73f.jpeg?region=164%2C0%2C953%2C536" alt="tatooine" width="100%" height="400px">
+            <div class="slide-text">Terrain:</div>
+            <div class="planet-terrain"></div>
+        </div>
+
+        <a class="prev" onclick="otherSlide(-1)">❮</a>
+        <a class="next" onclick="otherSlide(1)">❯</a>
+    </div>
+</body>
+</html>
